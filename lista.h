@@ -1,4 +1,4 @@
-#ifndef LISTA_H
+#ifndef LISTA_H // IF PARA VERIFICAR SE ESSA ESTRUTURAÇÃO JÁ FOI IMPLEMENTADA NO PROGAMA PRINCIPAL, EVITANDO ERROS FUTUROS
 #define LISTA_H
 
 typedef struct No {
@@ -32,6 +32,7 @@ typedef struct No {
     struct No* proxMortes;
 } No;
 
+void inserirNo(No** cabeca, No* novoNo, char campoOrdenacao[]);
+void imprimirLista(No* cabeca);
 
-
-#endif  
+#endif
