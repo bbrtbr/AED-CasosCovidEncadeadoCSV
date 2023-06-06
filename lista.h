@@ -1,17 +1,17 @@
-#ifndef LISTA_H
+#ifndef LISTA_H // verificar se o arquivo ja foi implementado
 #define LISTA_H
 
 typedef struct no {
     void *dados;
     struct no *anterior;
     struct no *proximo;
-} No;
+} No; // Genérico
 
 typedef struct {
     No *primeiro;
     No *ultimo;
     int tamanho;
-} Lista;
+} Lista; // Nó descritor
 
 Lista* criarLista();
 void destruirLista(Lista *lista);
