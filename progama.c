@@ -27,6 +27,22 @@ void imprimirDados(void *dados) {
     printf("Total Deaths: %d\n", d->deaths);
 }
 
+No* buscarPorEstado(Lista *lista, char estado[100]) {
+  No *atual = lista->primeiro;
+
+  while(atual != NULL){
+    Dados *d = (Dados*) atual->dados;
+
+    if (strcmp(estado, d->state) == 0){
+      return atual;
+    }
+    
+    atual = atual->proximo;
+  }
+
+  return NULL;
+}
+
 int main() {
     Lista *lista = criarLista();
 
