@@ -43,6 +43,14 @@ No* buscarPorEstado(Lista *lista, char estado[100]) {
   return NULL;
 }
 
+No* buscarMaisCasos(Lista *lista) {
+  return lista->primeiro;
+}
+
+No* buscarMenosCasos(Lista *lista) {
+  return lista->ultimo;
+}
+
 int main() {
     Lista *lista = criarLista();
 
